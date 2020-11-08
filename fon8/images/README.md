@@ -3,11 +3,11 @@ Siemens M20 terminal
 
 ![all](all.jpg)
 
-![bottom](bottom.jpg)
+![top](top.jpg)
 
-![left](left.jpg)
+![bottom](bottom.jpg)
 
 ![right](right.jpg)
 
-![top](top.jpg)
+![left](left.jpg)
 

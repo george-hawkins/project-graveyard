@@ -32,4 +32,4 @@ You can find more detailed photos [here](images).
 
 I've no idea what is on the CD (and don't remember if it was even anything useful). 20 years later, it's no longer readable.
 
-The M20 terminal has a rather odd power connection - it has two RJ11 sockets (one for audio - it could handle audio as well as SMSs) and one for power. I guess it was intended to be powered like a classic fixed line handset. Hence the PCB with the huge capicitors - it takes what looks like a 3.5x1.3mm barrel jack from a power adapter on one side and provides a powered RJ11 socket on the other.
+The M20 terminal has a rather odd power connection - it has two RJ11 sockets (one for audio - it could handle audio as well as SMSs) and one for power. I guess it was intended to be powered like a classic fixed line handset. Hence the PCB with the huge capicitor - it takes what looks like a 3.5x1.3mm barrel jack from a power adapter on one side and provides a powered RJ11 socket on the other.
