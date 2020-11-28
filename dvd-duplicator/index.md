@@ -21,7 +21,7 @@ And at the end...
 _Metal._  
 [![22_124552](images/IMG_20201122_124552.jpg)](images/IMG_20201122_124552.jpg)
 
-_More metal.__  
+_More metal._  
 [![22_124845](images/IMG_20201122_124845.jpg)](images/IMG_20201122_124845.jpg)
 
 Nearly all of the structure is sheet metal that's been cut and then bent into shape with a little bit of very light weight welding at some points. The only exception being the joint between the base and the tower, which appears to have been custom milled from aluminum.
@@ -44,7 +44,9 @@ Still in one piece
 
 Let's look at the duplicator in its initial state. It's a MediaTechnics Fusion4 that was bought in 2004. The Fusion 4 is still being produced [today](https://www.mediatechnics.com/pages/fusion4dvd.htm) (with a very slightly updated design - rounder edges on the case being the most obvious change). It can handle 600 disks at a time and is 69cm wide, 66cm high and 71cm deep.
 
-TODO: put first video here.
+<video controls preload="metadata">
+    <source src="videos/disk-removal.mp4" type="video/mp4">
+</video>
 
 _Front._
 [![14_121040](images/IMG_20201114_121040.jpg)](images/IMG_20201114_121040.jpg)
@@ -146,7 +148,9 @@ However, all that had been done was to tidy things up by folding the wire connec
 
 [![14_153836](images/IMG_20201124_100423.jpg)](images/IMG_20201124_100423.jpg)
 
-TODO: add video here.
+<video controls preload="metadata">
+    <source src="videos/arm-full-movement.mp4" type="video/mp4">
+</video>
 
 Close ups of the connectors
 ---------------------------
@@ -187,7 +191,9 @@ The tower turns on a substantial custom milled aluminum joint. The wiring for th
 
 There are sixteen wires within the spiral cable wrap. If you want to pass wires between components that rotate relative to each other, you might often use a [split ring](https://en.wikipedia.org/wiki/Slip_ring). However, a split ring that supported sixteen wires would be quite expensive and split rings support continuous rotation - which isn't required here. Instead for this application it was acceptable for the wires to be twisted back and forward through the ~225&deg; between the DVD drives and the furthest away DVD bin.
 
-TODO: add video of removed tower failing to calibrate.
+<video controls preload="metadata">
+    <source src="videos/arm-up.mp4" type="video/mp4">
+</video>
 
 Tower close-ups - front
 -----------------------
