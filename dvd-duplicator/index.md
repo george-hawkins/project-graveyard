@@ -602,7 +602,7 @@ _PSU internals (from left side)._
 _PSU internals (from right side)._  
 [![15_115607](images/IMG_20201115_115607.jpg)](images/IMG_20201115_115607.jpg)
 
-DVD writer
+DVD reader
 ----------
 
 CDs are digital, so one would imagine that it should be the case that all drives are equally suitable for ripping audio CDs. Surprisingly, this isn't the case. Unlike a CD-ROM, an audio CDs use all 2352 bytes per block for sound samples. CD-ROMs use only 2048 bytes per block, with most of the rest going to ECC (Error Correcting Code) data. There are various strategies for decoding the data on an audio CD, detecting surface errors and dealing with the resulting errors. Some drives have better strategies than others and many drives only provide the data they've reconstructed from reading the disk without reporting if any errors were encountered in the process. I.e. you can't know if you've read exactly what was on the disk or are just reading the drive's best effort at reconstructing the data. Interpolating data usually works fine for audio data (it certainly wouldn't be fine for a CD-ROM), so for listeners it's generally not an issue. However, if you want high quality rips, you'd like a drive that supplies information on [C2 errors](https://en.wikipedia.org/wiki/C2_error), has [jitter correction](https://www.cdrfaq.org/faq02.html#S2-15), accurate start block detection and various other features that make it possible to accurately extract audio data.
@@ -611,7 +611,7 @@ Unfortunately, drive manufacturers are very poor at providing low level informat
 
 At the time, LITE-ON (Plextor) was generally regarded as one of the best drive manufacturers but in the end the model below from AOpen proved to have all the desired features and performed the best of all the drives I tested.
 
-One odd thing I discovered is that the trays on most DVD writers don't open quite fully, the last few millimeters of the disk are still within the drive when viewed from above. This isn't a problem for normal usage, there's no issue for a person to slide the disk in slightly. But for a robot, that drops disks onto the open trays, it's a problem. Of the various drives that I bought, only the AOpen drive opened fully enough for a disk to be dropped onto the tray. Fortunate that it was also the drive that performed best in my other tests.
+One odd thing I discovered is that the trays on most DVD readers don't open quite fully, the last few millimeters of the disk are still within the drive when viewed from above. This isn't a problem for normal usage, there's no issue for a person to slide the disk in slightly. But for a robot, that drops disks onto the open trays, it's a problem. Of the various drives that I bought, only the AOpen drive opened fully enough for a disk to be dropped onto the tray. Fortunate that it was also the drive that performed best in my other tests.
 
 This is an AOpen DVD-1648/AAP. Surprisingly, AOpen still maintain some data on this legacy product [here](https://de.aopen.com/products_detail.aspx?auno=783). As you can see they just cover the basic features that most end users might be interested in rather than going into the details needed to tell whether it reports C2 errors etc.
 
