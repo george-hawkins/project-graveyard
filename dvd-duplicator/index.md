@@ -178,6 +178,8 @@ Removing the tower
 _Removed photo interrupter._  
 [![14_155025](images/IMG_20201114_155025.jpg)](images/IMG_20201114_155025.jpg)
 
+You can buy something very similar, to this Optek OPB831W55 photo interrupter, from [Adafruit](https://www.adafruit.com/product/3985) for about US$4.
+
 The tower base with the stepper removed. Most of the rest of the device is fairly light, but the base of the tower is a much heavier and more substantial piece of metal.
 
 [![14_133123](images/IMG_20201114_133123.jpg)](images/IMG_20201114_133123.jpg)
