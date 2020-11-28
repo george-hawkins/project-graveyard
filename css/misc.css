@@ -1,0 +1,4 @@
+video {
+    /* By default videos are allowed to overflow their containers. */
+    max-width: 100%;
+}

@@ -6,9 +6,7 @@ title: Dismantling a DVD duplicator robot
 Dismantling a DVD duplicator robot
 ==================================
 
-TODO: add in 3 videos.
-
-I often take things apart but it's not often that I take apart an almost unused functioning DVD duplicator robot, that cost ~US$3,000, and reduce it to about 16kg of metal, 1kg of wires and PCBs and 1kg of possibly reusable but essentially worthless parts. This page document its destruction. It's mainly photos but there are also three videos below. It's mainly photos but there are also three videos below.
+I often take things apart but it's not often that I take apart an almost unused functioning DVD duplicator robot, that cost ~US$3,000, and reduce it to about 16kg of metal, 1kg of wires and PCBs and 1kg of possibly reusable but essentially worthless parts. This page document its destruction. It's mainly photos but there are also three videos below.
 
 On disassembling, it became clear that nearly all the value in this device is in the physical structure - it contains surprisingly little in the way of interesting electronics.
 
