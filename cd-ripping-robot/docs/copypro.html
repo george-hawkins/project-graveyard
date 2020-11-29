@@ -1,0 +1,339 @@
+<html>
+
+<head>
+
+	<style type="text/css">
+		body { font-family: Arial, Helvetica, sans-serif }
+	</style>
+
+	<title>CopyPro Support</title>
+
+</head>
+
+
+<body>
+
+<h1>How to interface with the Mini-Max from your own software</h1>
+
+The robot takes commands from the serial port. Establish a connection to
+COM1 with a program like hyperterminal using the following settings:</p>
+
+Bits per second: 9600<br>
+Data bits: 8<br>
+Parity: odd<br>
+Stop bits: 1<br>
+Hardware flow control: yes<br>
+Software flow control: no<br>
+
+<p>
+<table width="60%">
+	<tr>
+		<td width="32">&nbsp;</td>
+<td>
+	<font color="red">Note: CopyPro briefly discuss, in a separate
+		document, the RS-232 pins including RTS/CTS and DCD and their
+		expected state when interacting with their duplicator - George.
+</font>
+</td>
+</tr>
+</table>
+
+<p>
+Here are the commands for version 4.XX and above of the Mini-Max (CR
+indicates a carriage return).
+
+<h2>Standard Commands (Mode 0)</h2>
+
+<table border cellspacing=3 cellpadding=7 width=638>
+<tr><th>
+Instruction
+</th><th>
+Description
+</th><th>
+Parameter Range
+</th></tr>
+<tr><td>
+GS[xx]CR
+</td><td>
+Get CD from Spindle # xx
+</td><td>
+Range [xx] is 00-05
+</td></tr>
+<tr><td>
+GD[xx]CR
+</td><td>
+Get CD from Drive # xx
+</td><td>
+Range [xx] is 00-15 decimal
+</td></tr>
+<tr><td>
+GT[xx]CR
+</td><td>
+Get CD from Temp
+</td><td>
+Range [xx] is 00
+</td></tr>
+<tr><td>
+PS[xx]CR
+</td><td>
+Put CD on Spindle # xx
+</td><td>
+Range [xx] is 00-05
+</td></tr>
+<tr><td>
+PD[xx]CR
+</td><td>
+Put CD on Drive # xx
+</td><td>
+Range [xx] is 00-15 decimal
+</td></tr>
+<tr><td>
+PT[xx]CR
+</td><td>
+Put CD on Temp
+</td><td>
+Range [xx] is 00
+</td></tr>
+<tr><td>
+PR[xx]CR
+</td><td>
+Put CD on Reject
+</td><td>
+Range [xx] is 00
+</td></tr>
+<tr><td>
+SR[xx]CR
+</td><td>
+Report Status on xx
+</td><td>
+Range [xx] is 00-99
+</td></tr>
+<tr><td>
+VR[xx]CR
+</td><td>
+Report Version
+</td><td>
+Range [xx] is 00-99
+</td></tr>
+<tr><td>
+MD[xx]CR
+</td><td>
+Set Mode to xx
+</td><td>
+Range [xx] is 00-03
+</td></tr>
+<tr><td>
+KL[xx]CR
+</td><td>
+Clear Status xx
+</td><td>
+Range [xx] is 00-99
+</td></tr>
+<tr><td>
+SO[xx]CR
+</td><td>
+Set Option
+</td><td>
+Range [xx] is 00-08
+</td></tr>
+<tr><td>
+CO[xx]CR
+</td><td>
+Clear Option
+</td><td>
+Range [xx] is 00-08
+</td></tr>
+<tr><td>
+CM[xx]CR
+</td><td>
+Calibrate Motors
+</td><td>
+Range [xx] is 00
+</td></tr>
+</table>
+<p>
+
+<table width="60%">
+	<tr>
+		<td width="32">&nbsp;</td>
+<td>
+	<font color="red">Note: Copypro document the statuses, options and
+		motor callibration in a separate document - I've just cut out
+		the piece for statuses and part of the table that goes with it
+		as an example and included it directly below - George.
+</font>
+
+<h3>Status Reporting</h3>
+
+The SR[xx] command can be used to retrieve static and dynamic
+information about the duplicator. Set xx to retrieve information as
+follows:
+<p>
+
+<table border cellspacing=3 cellpadding=7>
+	<tr>
+		<th>xx</th><th>Information Reported</th>
+	</tr>
+	<tr>
+		<td>00
+</td><td>autoloader status</td>
+	</tr>
+	<tr>
+		<td>01
+</td><td>number of drives</td>
+	</tr>
+	<tr>
+		<td>02
+</td><td>number of spindles</td>
+	</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<h2>Interactive Commands (Mode 1)</h2>
+
+<table border cellspacing=3 cellpadding=7 width=638>
+<tr><th>
+Instruction
+</th><th>
+Description
+</th><th>
+Parameter Range
+</th></tr>
+<tr><td>
+TM[xx]CR
+</td><td>
+Enter Teach Mode
+</td><td>
+Range [xx] is 00-99
+</td></tr>
+<tr><td>
+AS[xx]CR
+</td><td>
+Align Spindle # xx
+</td><td>
+Range [xx] is 00-99
+</td></tr>
+<tr><td>
+AD[xx]CR
+</td><td>
+Align Drive # xx
+</td><td>
+Range [xx] is 00-99
+</td></tr>
+<tr><td>
+DC[xx]CR
+</td><td>
+Display Configuration
+</td><td>
+Range [xx] is 00-99
+</td></tr>
+<tr><td>
+MD[xx]CR
+</td><td>
+Set Mode to xx
+</td><td>
+Range [xx] is 00-03
+</td></tr>
+</table>
+
+<p>
+<table width="60%">
+	<tr>
+		<td width="32">&nbsp;</td>
+<td>
+	<font color="red">Note: Copypro cover teaching and the other
+		interactive commands in depth in a separate document, a
+		reasonable brief run through would be OK for us (assuming
+		the Fusion chassis has similar commands) - George.
+</font>
+</td>
+</tr>
+</table>
+
+<h2>Command &amp; Response Examples</h2>
+
+<table border cellspacing=3 cellpadding=7 width=638>
+<tr><th>
+Command
+</th><th>
+Response
+</th><th>
+Action
+</th></tr>
+<tr><td>
+GS[01]CR
+</td><td>
+GS[01]&lt;00&gt;CR
+</td><td>
+Get CD from Spindle 01 returned OK
+</td></tr>
+<tr><td>
+GS[32]CR
+</td><td>
+GS[32]&lt;22&gt;CR
+</td><td>
+Returned BAD_PARAM error
+</td></tr>
+<tr><td>
+S[00]CR
+</td><td>
+S[00]&lt;21&gt;CR
+</td><td>
+Returned BAD_COMMAND error
+</td></tr>
+<tr><td>
+PD[00]CR
+</td><td>
+PD[00]&lt;00&gt;CR
+</td><td>
+Put CD on Drive 00 returned OK
+</td></tr>
+<tr><td>
+SR[00]CR
+</td><td>
+SR[00]&lt;00&gt;CR
+</td><td>
+Report Autoloader Status
+</td></tr>
+<tr><td>
+SR[01]CR
+</td><td>
+SR[01]{02}&lt;00&gt;CR
+</td><td>
+Report Number of Drives
+</td></tr>
+<tr><td>
+SR[02]CR
+</td><td>
+SR[02]{01}&lt;00&gt;CR
+</td><td>
+Report Number of Columns
+</td></tr>
+<tr><td>
+VR[00]CR
+</td><td>
+	<font size=1><p>VR[00]{"CopyPro, Inc. Autoloader CDR-5500 V4.0"}&lt;00&gt;CR</font>
+</td><td>
+Return Version String
+</td></tr>
+</table>
+
+<p>
+<table width="60%">
+	<tr>
+		<td width="32">&nbsp;</td>
+<td>
+	<font color="red">Note: CopyPro list out the return codes (the
+		values seen above between '&lt;' and '&gt;' signs, e.g.
+		'&lt;00&gt;' meaning OK and '&lt;32&gt;' meaning BAD_PARAM) in
+		the appendix of a separate document - George.
+</font>
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

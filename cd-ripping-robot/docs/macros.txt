@@ -1,0 +1,195 @@
+--Cut here---->
+[Rp1
+a1$02C0$02C8$02D4$02E2$02EA$02F0$02F2$02F3$03F4$04F5$05F6$06F7$07F8$08F9$4FFA$7eFB$00FC
+
+[Rp2
+a2$02C0$02D6$02E6$02EC$02F0$02F2$02F3$02F4$04F5$04F6$04F7$06F8$08F9$0AFA$4CFB$7eFC$00FD
+
+[V
+P'"Mediatechnics" "FUSION-XP" "V6.2a"'
+
+[C
+/Rp1 /Rp2 l1=0 /CE W5 /CS /VNoCD8 W5
+
+[A
+/C /GoD /AccD /Pick /HE /VCD9 /GoOB /VCD9 /DpOB /Cal
+
+[G
+CI5=1@A /C /GoD /AccD :A /Pick /HE /VCD9
+
+[I
+CI5=1@A /C /IBPk /Pick :A /HE /VCD7 /GoD /VCD7 /InsD /Drop /Cal i0 i7
+
+[J
+CI5=1@A /C /IBPk /Pick :A /HE /VCD7 /GoD /VCD7 /InsD
+
+[O
+/C /GoD /AccD /Pick /HE /VCD9 /GoIB /VCD9 /DpIB /Cal
+
+[R
+CI5=0@A /GoRj /DpRj /Drop :A /Cal
+
+[W
+s1R1
+
+[Y
+s1-R1
+
+[Z
+/TestIA
+
+[CS
+CI1=1@A s1I1=1T36 W4 :A /sa /sa R1=$8000
+
+[sa
+s1-I1=0T12 W4 s1I1=1T06
+
+[CE
+CI3=1@A s2-I3=1T36 W4 :A /sb R2=$8000
+
+[sb
+s2I3=0T06 W4 s2-I3=1T06
+
+[HS
+s1A$8000T36 W8
+
+[HE
+s2-I3=1A$7FFCT36 CI3=1@X /CE W8 :X
+
+[Cal
+/HE /HS
+
+[CC
+I0 I1 I2 I3 I4 I5 I6
+
+[IBPk
+/GoIB s2I5=1A$87C2T36 CI5=1@X s2I5=1A$87C2T36 CI5=1@X /ChEmt :X
+
+[ChEmt
+s2-R48 CI7=0@B /HE F2=0 F3=0 CI0=1@A /SfIB JX :A /SfIB2 JX :B E$21 :X
+
+[GoIB
+CF0=1@A CF1=1@B /IB1 JX :A /IB2 JX :B /IB3 :X
+
+[GoOB
+CF0=1@A CF1=1@B /OB1 JX :A /IB1 JX :B /IB2 :X
+
+[SfIB
+CF0=1@A CF1=1@B F0=1 JC :A F0=0 F1=1 JC :B /Cal E$20 :C /IBPk
+
+[SfIB2
+CF0=1@A F0=1 JC :A /Cal E$20 :C /IBPk
+
+[InsD
+/DwnS2 CI7=1@A /DwnS2 CI7=1@A l1=0 /HE E$60 :A s2R28T05
+
+[DwnS2
+s2I7=1A$8772T36
+
+[AccD
+/DwnS2 CI7=1@A /DwnS2 CI7=1@A /DwnS2 CI7=1@A /HE E$30 JX :A W80 /CkCD :X
+
+[CkCD
+s2R26 s2I5=1R21T05 s2R4 W9 CI5=1@X s2I5=1R21T05 s2R4 W9 CI5=1@X CI5=1@X E$B0 :X
+
+[Pick
+s2R14T06 l1=1 W98 /PK2 CI5=1@A /PK2 :A W65
+
+[PK2
+s2-I5=0R54T08 CI5=1@X l1=0 W99 s2I5=1R56T08 s2R14T05 l1=1 W98 s2-I5=0R54T08 :X
+
+[DpOB
+CF0=1@A CF1=0@D :A CF2=1@B CF3=1@C /St1 JX :B /St2 JX :C /St3 JX :D s2R21T04 :X /ChF
+
+[St1
+s2I7=1A$85AFT18 CI7=0@X F2=1 :X
+
+[St2
+s2I7=1A$83AFT18 CI7=0@X f2=0 F3=1 :X
+
+[St3
+s2I7=1A$81AFT18
+
+[ChF
+/Drop CF0=1@A CF1=1@A W50 CI5=1@B JX :A s2-I3=1A$804FT36 CI5=0@X :B /HE E$A0 :X
+
+[DpIB
+s2I7=1A$85DAT36 /Drop
+
+[DpRj
+s2I7=1A$8772T36 CI7=0@X s2-R126T09 l1=0 /HE E$50 :X
+
+[Drop
+l1=0 W125
+
+[GoD
+s1A$80C7T12 W80
+
+[GoRj
+s1A$80C8T12 W80
+
+[OB1
+s1A$7F2AT16 W80
+
+[IB1
+s1A$7E0FT18 W80
+
+[IB2
+s1A$7D03T20 W80
+
+[IB3
+s1A$7BF8T24 W80
+
+[VCD7
+CI5=1@A l1=0 E$70 :A
+
+[VCD9
+CI5=1@A l1=0 E$90 :A
+
+[VNoCD8
+CI5=0@A l1=0 E$80 :A
+
+[TestIA
+/tf
+
+[ta
+/I W150 /A P'x' W50
+
+[tb
+/ta /ta /ta /ta /ta /ta /ta /ta /ta /ta /ta /ta /ta /ta /ta /ta /ta /ta /ta /ta
+
+[tc
+/tb /tb /tb /tb /tb /tb /tb /tb /tb /tb /tb /tb /tb /tb /tb /tb /tb /tb /tb /tb
+
+[td
+/tc /tc /tc /tc /tc /tc /tc /tc /tc /tc /tc /tc /tc /tc /tc /tc /tc /tc /tc /tc
+
+[te
+/td /td /td /td /td /td /td /td /td /td /td /td /td /td /td /td /td /td /td /td
+
+[tf
+/te /te /te /te /te /te /te /te /te /te /te /te /te /te /te /te /te /te /te /te
+
+[PK
+/pc
+
+[pa
+l1=1 W100 l1=0 w300 
+
+[pb
+/pa /pa /pa /pa /pa /pa /pa /pa /pa /pa /pa /pa /pa /pa /pa /pa /pa /pa /pa /pa
+
+[pc
+/pb /pb /pb /pb /pb /pb /pb /pb /pb /pb /pb /pb /pb /pb /pb /pb /pb /pb /pb /pb
+
+[pd
+/pc /pc /pc /pc /pc
+
+[mcw
+R1=0 R2=0 s2-I3=1 s1I1=1 s1-I1=0
+
+[mccwc
+R1=0 R2=0 s2-I3=1 s1-I1=0 s1-I1=0
+
+END
+<----Cut here--
