@@ -215,7 +215,7 @@ Tower close-ups - back and sides
 _Left-side of tower top with projection from arm almost parked in the photo interrupter._  
 [![14_154318](images/IMG_20201114_154318.jpg)](images/IMG_20201114_154318.jpg)
 
-Ribbon cable running from a small PCB within the tower to the tower arm (held in place here with cable ties and a piece of VHB-like tape folded under and over the cable, with its double-sided coating unremoved on the outer facing section). As the arm moves up and down the tower, the ribbon cable has to bend smoothly up and down through the slot in the side of the tower without buckling. To help with this a transparent layer of thick-ish tape was applied to both sides of the ribbon cable to make is stiffer. Similar bits of tape (removed before these pictures were taken) were also taped along the long sides of the slot, such that half the tape's width was on the inside of the tower and the other half bent outwards, at right angles, through the slot to create side walls to the channel formed by the slot. However, this tape had warped with time and actually ended up impeding the movement of the ribbon rather than helping it. Nowadays, one would probably create something with a 3D printer to do this kind of job.
+Ribbon cable running from a small PCB within the tower to the tower arm (held in place here with cable ties and a piece of VHB-like tape folded under and over the cable, with its double-sided coating unremoved on the outer facing section). As the arm moves up and down the tower, the ribbon cable has to bend smoothly up and down through the slot in the side of the tower without buckling. To help with this a transparent layer of thick-ish tape was applied to both sides of the ribbon cable to make is stiffer. Similar bits of tape (you can see them in earlier photos, they were removed before these pictures were taken) were also taped along the long sides of the slot, such that half the tape's width was on the inside of the tower and the other half bent outwards, at right angles, through the slot to create side walls to the channel they formed with the slot. However, this tape had warped with time and actually ended up impeding the movement of the ribbon rather than helping it. Nowadays, one would probably create something with a 3D printer to do this kind of job.
 
 _Right-side of tower._  
 [![14_155444](images/IMG_20201114_155444.jpg)](images/IMG_20201114_155444.jpg)
@@ -625,6 +625,11 @@ _AOpen DVD-1648/AAP - front._
 
 _AOpen DVD-1648/AAP - back._  
 [![14_163819](images/IMG_20201114_163819.jpg)](images/IMG_20201114_163819.jpg)
+
+I was surprised that the PSU, even back in 2004, was all through-hole components. The PCBs in the DVD reader are all SMD components, except for the larger connectors and the capacitors, as you'd expect.
+
+_AOpen DVD-1648/AAP - main PCB._
+[![29_123255](images/IMG_20201129_123255.jpg)](images/IMG_20201129_123255.jpg)
 
 Shipping container
 ------------------
